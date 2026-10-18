@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>muzica.dz</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">مكتبة الموسيقى</p>
+          <h1>muzica.dz</h1>
+        </div>
+        <div class="status-pill" id="statusPill">جاهز</div>
+      </header>
+
+      <main class="content-grid">
+        <section class="panel form-panel">
+          <h2>إضافة أغنية</h2>
+
+          <form id="songForm" class="song-form">
+            <div class="field-grid">
+              <label>
+                <span>العنوان</span>
+                <input name="title" type="text" placeholder="عنوان الأغنية" required />
+              </label>
+
+              <label>
+                <span>الفنان</span>
+                <input name="artist" type="text" placeholder="اسم الفنان" required />
+              </label>
+
+              <label>
+                <span>الألبوم</span>
+                <input name="album" type="text" placeholder="الألبوم" />
+              </label>
+
+              <label>
+                <span>النوع</span>
+                <input name="genre" type="text" placeholder="راي، شامي، جزائري..." />
+              </label>
+
+              <label>
+                <span>اللغة</span>
+                <input name="language" type="text" value="العربية" />
+              </label>
+
+              <label>
+                <span>الدولة</span>
+                <input name="country" type="text" value="DZ" />
+              </label>
+
+              <label class="full-width">
+                <span>رابط غلاف أو صورة</span>
+                <input name="coverUrl" type="url" placeholder="https://example.com/cover.jpg" />
+              </label>
+
+              <label class="full-width">
+                <span>ملاحظات</span>
+                <textarea name="notes" rows="3" placeholder="ملاحظات إضافية"></textarea>
+              </label>
+
+              <label class="full-width file-label">
+                <span>ملف الموسيقى</span>
+                <input id="audioFile" name="audio" type="file" accept="audio/*" required />
+              </label>
+            </div>
+
+            <button type="submit" class="primary-btn">رفع الأغنية</button>
+          </form>
+        </section>
+
+        <section class="panel library-panel">
+          <div class="library-header">
+            <h2>المكتبة</h2>
+            <button id="refreshBtn" class="secondary-btn" type="button">تحديث</button>
+          </div>
+
+          <div id="songList" class="song-list"></div>
+        </section>
+      </main>
+
+      <aside class="player-panel panel">
+        <div class="player-header">
+          <h3>المشغل</h3>
+        </div>
+
+        <div class="now-playing" id="nowPlaying">
+          <p class="label">يتم التفعيل...</p>
+          <h3>لا توجد أغنية مختارة</h3>
+        </div>
+
+        <audio id="audioPlayer" controls preload="none"></audio>
+      </aside>
+    </div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
