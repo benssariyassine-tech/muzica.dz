@@ -1,0 +1,23 @@
+{
+  "name": "muzica-dz",
+  "version": "1.0.0",
+  "description": "Music upload and library web app for Algerian and international songs",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "music",
+    "upload",
+    "express",
+    "web-app"
+  ],
+  "author": "benssariyassine-tech",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.2",
+    "multer": "^1.4.5-lts.1",
+    "uuid": "^11.0.0"
+  }
+}
