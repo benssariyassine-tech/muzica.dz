@@ -1,0 +1,28 @@
+[
+  {
+    "id": "demo-1",
+    "title": "أغنية تجريبية 01",
+    "artist": "فنّان جزائري",
+    "album": "تجربة",
+    "genre": "راي",
+    "language": "العربية",
+    "country": "DZ",
+    "coverUrl": "",
+    "notes": "أغنية نموذجيّة للعرض الأولي",
+    "file": "",
+    "createdAt": "2025-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "demo-2",
+    "title": "Track Sample 02",
+    "artist": "International Artist",
+    "album": "Global Mix",
+    "genre": "Pop",
+    "language": "English",
+    "country": "US",
+    "coverUrl": "",
+    "notes": "Sample international track",
+    "file": "",
+    "createdAt": "2025-01-02T00:00:00.000Z"
+  }
+]
