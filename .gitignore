@@ -147,3 +147,14 @@ vite.config.ts.timestamp-*
 
 # Turbo Repo
 .turbo
+
+# ==========================================
+# إعداداتك الخاصة اللي زدناها
+# ==========================================
+
+# متجر الآيفون (المتطلبات ديالك)
+.DS_Store
+uploads/*
+!uploads/.gitkeep
+data/*.json
+!data/songs.json
